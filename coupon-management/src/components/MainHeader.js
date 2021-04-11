@@ -10,7 +10,7 @@ export default function MainHeader(props) {
     }
 
     return (
-        <div style={{ "marginBottom": "71px", "marginLeft": "48px", "marginRight": "55px" }}>
+        <div style={{"marginLeft":"48px", "marginRight":"55px"}}>
             <div
                 style={props.headerStyle}
             >
@@ -23,7 +23,7 @@ export default function MainHeader(props) {
                 {props.headerText}
             </div>
 
-            <div style={{ "float": "right", "verticalAlign":"bottom"}}>
+            <div style={{ "float":"right", "verticalAlign":"bottom"}}>
                 <button
                     style={{
                         "marginTop": "13px",
