@@ -34,6 +34,8 @@ export default function MainHeader(props) {
                         "borderRadius": "12px",
                         "borderWidth": "0px",
                         "fontWeight": "bold",
+                        "fontSize": "16px",
+                        "letterSpacing": "0.27px",
                         "lineHeight": "22px",
                         "cursor": "pointer"
                     }}

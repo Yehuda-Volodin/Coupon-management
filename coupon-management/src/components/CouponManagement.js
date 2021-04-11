@@ -9,7 +9,7 @@ export default function CouponManagement() {
         <div className="mainDiv">
             <MainHeader
                 headerText="Coupon Management"
-                headerStyle={{ "fontSize":"46px", "float":"left" }}
+                headerStyle={{ "fontSize":"33.32px", "float":"left", "letterSpacing": "-0.01px" }}
             />
             {/*Coupons table headers*/}
             <div style={{
