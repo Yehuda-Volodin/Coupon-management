@@ -4,6 +4,8 @@ import './CouponManagement.css';
 
 import MainHeader from './MainHeader';
 
+import rightArrow from './rightArrow.svg';
+
 export default function CouponManagement() {
     const [coupons, setCoupons] = useState([
         { brandName: "Starbucks", couponTitle: "Free cupcake", coupons: "123/278", issued: 98, used: 57, status: true },
@@ -32,16 +34,23 @@ export default function CouponManagement() {
                 <span style={{ "fontWeight": "normal" }}>{element.coupons.split('/', 2)[1]}</span>
             </span>
             {element.issued > 0 ?
-                <span style={{ "marginLeft": "100px", "display": "inline-block", "minWidth": "42px", "fontWeight": "bold", "color": "#6744D7" }}> {element.issued} </span>
+                <span style={{ "marginLeft":"100px", "display":"inline-block", "minWidth":"42px", "fontWeight":"bold", "color":"#6744D7" }}> {element.issued} </span>
                 :
-                <span style={{ "marginLeft": "100px", "display": "inline-block", "minWidth": "42px", "fontWeight": "bold", "color": "#FF3158" }}> {element.issued} </span>
+                <span style={{ "marginLeft":"100px", "display":"inline-block", "minWidth":"42px", "fontWeight":"bold", "color":"#FF3158" }}> {element.issued} </span>
             }
-            <span style={{ "marginLeft": "90px", "fontWeight": "bold", "color": "#FF3158" }}> {element.used} </span>
+            <span style={{ "marginLeft":"90px", "fontWeight":"bold", "color":"#FF3158" }}> {element.used} </span>
             {element.status ?
-                <span style={{ "marginLeft": "105px", "display":"inline-block","minWidth": "71px", "fontWeight": "bold", "color": "#44D7B6" }}> Active </span>
+                <span style={{ "marginLeft":"105px", "display":"inline-block", "minWidth":"71px", "fontWeight":"bold", "color":"#44D7B6" }}> Active </span>
                 :
-                <span style={{ "marginLeft": "105px", "display":"inline-block","minWidth": "71px", "fontWeight": "bold", "color": "#FF5575" }}> Inactive </span>
+                <span style={{ "marginLeft":"105px", "display":"inline-block", "minWidth":"71px", "fontWeight":"bold", "color":"#FF5575" }}> Inactive </span>
             }
+            <img
+                style={{ "marginLeft": "75px" }}
+                src={rightArrow}
+                alt="Right Arrow"
+                width="14"
+                height="24"
+            />
         </div>
     )
 
@@ -49,7 +58,7 @@ export default function CouponManagement() {
         <div className="mainDiv">
             <MainHeader
                 headerText="Coupon Management"
-                headerStyle={{ "fontSize": "33.32px", "float": "left", "letterSpacing": "-0.01px" }}
+                headerStyle={{ "fontSize":"33.32px", "float":"left", "letterSpacing":"-0.01px" }}
                 handleClick={setCoupons}
                 coupons={coupons}
             />
