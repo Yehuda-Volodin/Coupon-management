@@ -19,30 +19,28 @@ export default function CouponManagement() {
             "height": "24px",
             "borderBottom": "1px solid #E3E3E3",
 
-            "paddingLeft": "121px",
+            "paddingLeft": "121.5px",
             "fontSize": "18px",
             "fontWeight": "600",
             "lineHeight": "24px",
             "letterSpacing": "0.3px"
         }}>
-            {element.brandName}
-            <span style={{ "marginLeft": "78px" }}> {element.couponTitle} </span>
-
-            <span style={{ "marginLeft": "105.5px" }}>
+            <span style={{ "display": "inline-block", "minWidth": "121px" }}> {element.brandName} </span>
+            <span style={{ "marginLeft": "69px", "display": "inline-block", "minWidth": "179px" }}> {element.couponTitle} </span>
+            <span style={{ "marginLeft": "45px" }}>
                 {element.coupons.split('/', 2)[0] + "/"}
                 <span style={{ "fontWeight": "normal" }}>{element.coupons.split('/', 2)[1]}</span>
             </span>
-
             {element.issued > 0 ?
-                <span style={{ "marginLeft": "88.5px", "fontWeight": "bold", "color": "#6744D7" }}> {element.issued} </span>
+                <span style={{ "marginLeft": "100px", "display": "inline-block", "minWidth": "42px", "fontWeight": "bold", "color": "#6744D7" }}> {element.issued} </span>
                 :
-                <span style={{ "marginLeft": "88.5px", "fontWeight": "bold", "color": "#FF3158" }}> {element.issued} </span>
+                <span style={{ "marginLeft": "100px", "display": "inline-block", "minWidth": "42px", "fontWeight": "bold", "color": "#FF3158" }}> {element.issued} </span>
             }
-            <span style={{ "marginLeft": "72.5px", "fontWeight": "bold", "color": "#FF3158" }}> {element.used} </span>
+            <span style={{ "marginLeft": "90px", "fontWeight": "bold", "color": "#FF3158" }}> {element.used} </span>
             {element.status ?
-                <span style={{ "marginLeft": "84.5px", "fontWeight": "bold", "color": "#44D7B6" }}> Active </span>
+                <span style={{ "marginLeft": "105px", "display":"inline-block","minWidth": "71px", "fontWeight": "bold", "color": "#44D7B6" }}> Active </span>
                 :
-                <span style={{ "marginLeft": "84.5px", "fontWeight": "bold", "color": "#FF5575" }}> Inactive </span>
+                <span style={{ "marginLeft": "105px", "display":"inline-block","minWidth": "71px", "fontWeight": "bold", "color": "#FF5575" }}> Inactive </span>
             }
         </div>
     )
