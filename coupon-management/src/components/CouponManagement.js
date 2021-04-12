@@ -19,7 +19,7 @@ export default function CouponManagement() {
             "paddingTop": "51px",
             "paddingBottom": "53px",
             "height": "24px",
-            "borderBottom": "1px solid #E3E3E3",
+            "position":"relative",
 
             "paddingLeft": "121.5px",
             "fontSize": "18px",
@@ -51,6 +51,7 @@ export default function CouponManagement() {
                 width="14"
                 height="24"
             />
+            <div style={{ "borderBottom":"1px solid #E3E3E3", "width": "1108px", "position":"absolute","bottom":"0", "left":"47.5px" }}/>
         </div>
     )
 
