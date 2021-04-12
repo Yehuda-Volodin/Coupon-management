@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 
 import './CouponManagement.css';
 
@@ -27,7 +27,12 @@ export default function CouponManagement() {
         }}>
             {element.brandName}
             <span style={{ "marginLeft": "78px" }}> {element.couponTitle} </span>
-            <span style={{ "marginLeft": "105.5px" }}> {element.coupons} </span>
+
+            <span style={{ "marginLeft": "105.5px" }}>
+                {element.coupons.split('/', 2)[0] + "/"}
+                <span style={{ "fontWeight": "normal" }}>{element.coupons.split('/', 2)[1]}</span>
+            </span>
+
             {element.issued > 0 ?
                 <span style={{ "marginLeft": "88.5px", "fontWeight": "bold", "color": "#6744D7" }}> {element.issued} </span>
                 :
