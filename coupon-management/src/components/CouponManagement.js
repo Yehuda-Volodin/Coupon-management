@@ -28,9 +28,9 @@ export default function CouponManagement() {
             {element.brandName}
             <span style={{ "marginLeft": "78px" }}> {element.couponTitle} </span>
             <span style={{ "marginLeft": "105.5px" }}> {element.coupons} </span>
-            <span style={{ "marginLeft": "88.5px" }}> {element.issued} </span>
-            <span style={{ "marginLeft": "72.5px" }}> {element.used} </span>
-            <span style={{ "marginLeft": "84.5px" }}> {element.status ? "Active" : "Inactive"} </span>
+            <span style={{ "marginLeft":"88.5px", "fontWeight":"bold" }}> {element.issued} </span>
+            <span style={{ "marginLeft":"72.5px", "fontWeight":"bold" }}> {element.used} </span>
+            <span style={{ "marginLeft":"84.5px", "fontWeight":"bold" }}> {element.status ? "Active" : "Inactive"} </span>
         </div>
     )
 
