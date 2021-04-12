@@ -28,9 +28,17 @@ export default function CouponManagement() {
             {element.brandName}
             <span style={{ "marginLeft": "78px" }}> {element.couponTitle} </span>
             <span style={{ "marginLeft": "105.5px" }}> {element.coupons} </span>
-            <span style={{ "marginLeft":"88.5px", "fontWeight":"bold" }}> {element.issued} </span>
-            <span style={{ "marginLeft":"72.5px", "fontWeight":"bold" }}> {element.used} </span>
-            <span style={{ "marginLeft":"84.5px", "fontWeight":"bold" }}> {element.status ? "Active" : "Inactive"} </span>
+            {element.issued > 0 ?
+                <span style={{ "marginLeft": "88.5px", "fontWeight": "bold", "color": "#6744D7" }}> {element.issued} </span>
+                :
+                <span style={{ "marginLeft": "88.5px", "fontWeight": "bold", "color": "#FF3158" }}> {element.issued} </span>
+            }
+            <span style={{ "marginLeft": "72.5px", "fontWeight": "bold", "color": "#FF3158" }}> {element.used} </span>
+            {element.status ?
+                <span style={{ "marginLeft": "84.5px", "fontWeight": "bold", "color": "#44D7B6" }}> Active </span>
+                :
+                <span style={{ "marginLeft": "84.5px", "fontWeight": "bold", "color": "#FF5575" }}> Inactive </span>
+            }
         </div>
     )
 
