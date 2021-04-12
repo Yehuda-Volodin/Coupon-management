@@ -9,6 +9,11 @@ export default function MainHeader(props) {
         headerStyle: PropTypes.object,
     }
 
+    function onClickHandler() {
+        let newCoupons = [...props.coupons, props.coupons[0]];
+        props.handleClick([...newCoupons]);  
+    }
+
     return (
         <div style={{"marginLeft":"48px", "marginRight":"55px"}}>
             <div
@@ -39,6 +44,7 @@ export default function MainHeader(props) {
                         "lineHeight": "22px",
                         "cursor": "pointer"
                     }}
+                    onClick={onClickHandler}
                 >
                     + Add new coupon
             </button>

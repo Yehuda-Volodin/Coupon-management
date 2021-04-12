@@ -39,6 +39,8 @@ export default function CouponManagement() {
             <MainHeader
                 headerText="Coupon Management"
                 headerStyle={{ "fontSize": "33.32px", "float": "left", "letterSpacing": "-0.01px" }}
+                handleClick={setCoupons}
+                coupons={coupons}
             />
             {/*Coupons table headers*/}
             <div style={{
