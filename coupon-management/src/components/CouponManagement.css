@@ -1,10 +1,10 @@
 .mainDiv{
     width: 1204px;
-    height: 1227px;
+    min-height: 1227px;
     border-radius: 15px 15px 2px 2px;
     border-width: 0px;
     background-color: white;
     box-shadow: 0px 0px 4px rgba(216,216,216,0.37);
-
     padding-top: 58.5px;
+    margin: auto;
 }

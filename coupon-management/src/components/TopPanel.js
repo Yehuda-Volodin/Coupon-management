@@ -6,7 +6,6 @@ import smallRightArrow from './smallRightArrow.png';
 export default function TopPanel(props) {
     return (
         <div style={{
-            "width": "100%",
             "height": "73px",
             "backgroundColor": "white",
             "boxShadow": "0px 2px 4px rgba(216,216,216,0.37)",

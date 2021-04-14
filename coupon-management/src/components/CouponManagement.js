@@ -17,35 +17,42 @@ export default function CouponManagement() {
     return (
         <>
             <TopPanel />
-            <div className="mainDiv">
-                <MainHeader
-                    headerText="Coupon Management"
-                    headerStyle={{ "fontSize": "33.32px", "float": "left", "letterSpacing": "-0.01px" }}
-                    handleClick={setCoupons}
-                    coupons={coupons}
-                />
-                {/*Coupons table headers*/}
-                <div style={{
-                    "marginTop": "131px",
-                    "paddingTop": "19.5px",
-                    "paddingBottom": "18.5px",
-                    "backgroundColor": "#F6F7F8",
-                    "height": "24px",
+            <div style={{
+                "width": "100%",
+                "backgroundColor": "rgb(242 245 247)",
+                "paddingTop": "65px",
+                "paddingBottom": "65px",
+            }}>
+                <div className="mainDiv">
+                    <MainHeader
+                        headerText="Coupon Management"
+                        headerStyle={{ "fontSize":"33.32px", "float":"left", "letterSpacing":"-0.01px" }}
+                        handleClick={setCoupons}
+                        coupons={coupons}
+                    />
+                    {/*Coupons table headers*/}
+                    <div style={{
+                        "marginTop": "131px",
+                        "paddingTop": "19.5px",
+                        "paddingBottom": "18.5px",
+                        "backgroundColor": "#F6F7F8",
+                        "height": "24px",
 
-                    "paddingLeft": "121px",
-                    "fontSize": "18px",
-                    "fontWeight": "600",
-                    "lineHeight": "24px",
-                    "letterSpacing": "0.3px"
-                }}>
-                    Brand name
-                <span style={{ "marginLeft": "78px" }}> Coupon title </span>
-                    <span style={{ "marginLeft": "105.5px" }}> Coupons </span>
-                    <span style={{ "marginLeft": "88.5px" }}> Issued </span>
-                    <span style={{ "marginLeft": "72.5px" }}> Used </span>
-                    <span style={{ "marginLeft": "84.5px" }}> Status </span>
+                        "paddingLeft": "121px",
+                        "fontSize": "18px",
+                        "fontWeight": "600",
+                        "lineHeight": "24px",
+                        "letterSpacing": "0.3px"
+                    }}>
+                        Brand name
+                        <span style={{ "marginLeft": "78px" }}> Coupon title </span>
+                        <span style={{ "marginLeft": "105.5px" }}> Coupons </span>
+                        <span style={{ "marginLeft": "88.5px" }}> Issued </span>
+                        <span style={{ "marginLeft": "72.5px" }}> Used </span>
+                        <span style={{ "marginLeft": "84.5px" }}> Status </span>
+                    </div>
+                    <CouponList coupons={coupons} />
                 </div>
-                <CouponList coupons={coupons} />
             </div>
         </>
     )
