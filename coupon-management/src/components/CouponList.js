@@ -69,7 +69,7 @@ export default function CouponList(props) {
                     Inactive
                 </span>
             }
-            <img style={{ "marginLeft": "75px" }}
+            <img style={{ "marginLeft": "81px" }}
                 src={rightArrow}
                 alt="Right Arrow"
                 width="14"
