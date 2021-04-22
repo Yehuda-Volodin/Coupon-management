@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Coupon-management/static/css/main.9e54d1ca.chunk.css",
-    "main.js": "/Coupon-management/static/js/main.f4c9038e.chunk.js",
-    "main.js.map": "/Coupon-management/static/js/main.f4c9038e.chunk.js.map",
+    "main.css": "/Coupon-management/static/css/main.7b72909b.chunk.css",
+    "main.js": "/Coupon-management/static/js/main.2035b16b.chunk.js",
+    "main.js.map": "/Coupon-management/static/js/main.2035b16b.chunk.js.map",
     "runtime-main.js": "/Coupon-management/static/js/runtime-main.f0175861.js",
     "runtime-main.js.map": "/Coupon-management/static/js/runtime-main.f0175861.js.map",
     "static/js/2.8785a3c5.chunk.js": "/Coupon-management/static/js/2.8785a3c5.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.d220ed55.chunk.js": "/Coupon-management/static/js/3.d220ed55.chunk.js",
     "static/js/3.d220ed55.chunk.js.map": "/Coupon-management/static/js/3.d220ed55.chunk.js.map",
     "index.html": "/Coupon-management/index.html",
-    "static/css/main.9e54d1ca.chunk.css.map": "/Coupon-management/static/css/main.9e54d1ca.chunk.css.map",
+    "static/css/main.7b72909b.chunk.css.map": "/Coupon-management/static/css/main.7b72909b.chunk.css.map",
     "static/js/2.8785a3c5.chunk.js.LICENSE.txt": "/Coupon-management/static/js/2.8785a3c5.chunk.js.LICENSE.txt",
     "static/media/rightArrow.bbf4361d.svg": "/Coupon-management/static/media/rightArrow.bbf4361d.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.f0175861.js",
     "static/js/2.8785a3c5.chunk.js",
-    "static/css/main.9e54d1ca.chunk.css",
-    "static/js/main.f4c9038e.chunk.js"
+    "static/css/main.7b72909b.chunk.css",
+    "static/js/main.2035b16b.chunk.js"
   ]
 }
