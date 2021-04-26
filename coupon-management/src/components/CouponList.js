@@ -52,7 +52,7 @@ export default function CouponList(props) {
                 <span style={{
                     "marginLeft": "105px",
                     "display": "inline-block",
-                    "minWidth": "71px",
+                    "minWidth": "74.5px",
                     "fontWeight": "bold",
                     "color": "#44D7B6"
                 }}>
@@ -62,7 +62,7 @@ export default function CouponList(props) {
                 <span style={{
                     "marginLeft": "105px",
                     "display": "inline-block",
-                    "minWidth": "71px",
+                    "minWidth": "74.5px",
                     "fontWeight": "bold",
                     "color": "#FF5575"
                 }}>
