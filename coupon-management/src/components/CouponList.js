@@ -5,20 +5,22 @@ import rightArrow from './rightArrow.svg';
 
 export default function CouponList(props) {
     CouponList.propTypes = {
-        coupons: PropTypes.object.isRequired,
+        coupons: PropTypes.array.isRequired,
     }
 
     const couponsTable = props.coupons.map((element, index) =>
-        <div style={{
-            "paddingTop": "51px",
-            "paddingBottom": "53px",
-            "height": "24px",
-            "position": "relative",
-            "paddingLeft": "121.5px",
-            "fontSize": "18px",
-            "fontWeight": "600",
-            "lineHeight": "24px",
-            "letterSpacing": "0.3px"
+        <div 
+            key={index}
+            style={{
+                "paddingTop": "51px",
+                "paddingBottom": "53px",
+                "height": "24px",
+                "position": "relative",
+                "paddingLeft": "121.5px",
+                "fontSize": "18px",
+                "fontWeight": "600",
+                "lineHeight": "24px",
+                "letterSpacing": "0.3px"
         }}>
             <span style={{ "display":"inline-block", "minWidth":"121px" }}> {element.brandName} </span>
             <span style={{ "marginLeft":"69px", "display":"inline-block", "minWidth":"179px" }}> {element.couponTitle} </span>
