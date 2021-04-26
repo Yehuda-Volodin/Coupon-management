@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Coupon-management/static/css/main.7b72909b.chunk.css",
-    "main.js": "/Coupon-management/static/js/main.2035b16b.chunk.js",
-    "main.js.map": "/Coupon-management/static/js/main.2035b16b.chunk.js.map",
+    "main.js": "/Coupon-management/static/js/main.429e7374.chunk.js",
+    "main.js.map": "/Coupon-management/static/js/main.429e7374.chunk.js.map",
     "runtime-main.js": "/Coupon-management/static/js/runtime-main.f0175861.js",
     "runtime-main.js.map": "/Coupon-management/static/js/runtime-main.f0175861.js.map",
     "static/js/2.8785a3c5.chunk.js": "/Coupon-management/static/js/2.8785a3c5.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.f0175861.js",
     "static/js/2.8785a3c5.chunk.js",
     "static/css/main.7b72909b.chunk.css",
-    "static/js/main.2035b16b.chunk.js"
+    "static/js/main.429e7374.chunk.js"
   ]
 }
